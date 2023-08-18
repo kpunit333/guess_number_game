@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./guess-page-favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="guess.css">
+
+    <title>Game | Guess the number</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-comp nav-head">
+
+            <img src="guess.png" alt="logo" id="logoimg" width="120px">
+            
+        </div>
+
+        <div class="nav-comp nav-tab">
+
+            <a href="/" class="nav-link">Home</a>
+            <a href="/about.html" class="nav-link">About</a>
+
+        </div>
+
+    </nav>
+
+    <div class="guess-the-number-game">
+        <!-- Game -->
+
+        <details class="game-details">
+            <summary>How to play ?</summary>
+            <li>You need the guess the number within limited number of attempts.</li>
+            <li>You can select the range from 1 to 100 as range.</li>
+            <li>Please click on restart for the range to take effect.</li>
+            <li>All the best.</li>
+        </details>
+
+        <div class="game-screen-container" >
+
+            <div class="game-screen">
+
+                <div class="game-upper">
+
+                    <div class="game-range">
+
+                        <button class="restart-btn">Restart</button>
+                        <div class="range-select">
+                            <label for="range">Range :</label>
+                            <input type="range" id="range" min="20" max="100" step="10" value="20" style="margin: 0 5px;">
+                            <output class="outrange" style="font-weight: bold;">20</output>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="game-guess">
+
+                        <h4 style="font-size: 1.2em;" class="guessNo-head">Guess the number</h4>
+                        <h1 style="font-size: 6em;" class="guessNo">?</h1>
+
+                    </div>
+
+                </div>
+
+                <div class="game-lower">
+
+                    <div class="game-lower-left">
+
+                        <input type="number" class="check-input" placeholder="Guess" min="1" max="20">
+                        <button class="check-btn">Check !</button>
+
+                    </div>
+
+                    <div class="game-lower-right">
+
+                        <h2><span class="score-level">&ssmile;</span><span class="level-text">Guess it...</span></h2>
+                        <h4>Score : <span class="score">20</span></h4>
+                        <h4>Hi-Score : <span class="hiscore">0</span></h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="guess.js"></script>
+
+</html>
