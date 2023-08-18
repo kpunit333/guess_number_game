@@ -2,4 +2,4 @@
 
 Guess the number
 
-### Site is [LIVE](https://github.com/kpunit333/guess_number_game)
+### Site is [LIVE](https://kpunit333.github.io/guess_number_game/)
